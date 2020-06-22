@@ -1,3 +1,13 @@
+//Define Student object
+/**
+ * Object containing data of a student.
+ * @typedef {Object} Student
+ * @property {string} avatar
+ * @property {string} name
+ * @property {string} email
+ * @property {string} joined
+*/
+
 /**
  * ul where the students are loaded
  * @type {HTMLUListElement}
@@ -8,15 +18,6 @@ const studentList = document.querySelector('ul.student-list')
  * Desired number of students per page
  */
 const studentsPerPage = 10
-
-/**
- * Object containing data of a student.
- * @typedef {Object} Student
- * @property {string} avatar
- * @property {string} name
- * @property {string} email
- * @property {string} joined
- */
 
 /**
  * Recursively converts every li from student-list ul into a array of objects containing data about the students,
